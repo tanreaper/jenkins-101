@@ -63,3 +63,8 @@ docker inspect <container_id> | grep IPAddress
 ```
 docker pull devopsjourney1/myjenkinsagents:python
 ```
+
+## Pulled from base repo
+```
+Repo link: https://github.com/devopsjourney1/jenkins-101.git
+```
