@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                echo "doing build stuff.."
+                echo "doing build stuff..."
                 '''
             }
         }
@@ -17,17 +17,25 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing test stuff..
+                echo "doing test stuff..."
                 '''
             }
         }
-        stage('Deliver') {
+        stage('Deploy') {
             steps {
-                echo 'Deliver....'
+                echo 'Deploying....'
                 sh '''
-                echo "doing delivery stuff.."
+                echo "deploying application..."
                 '''
             }
+        }
+    }
+    post {
+        always {
+
+        }
+        success {
+          // On success, can be used on failure as well.ß  
         }
     }
 }
